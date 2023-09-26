@@ -1,0 +1,53 @@
+body{
+    margin: auto 0;
+}
+
+.name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tangerine";
+    font-size: 600%;
+    color:#0d6efd;
+    text-shadow: 5px 5px black;
+    
+}
+
+.skill{
+    text-align: center;
+    font-family: "Tangerine";
+    font-size: 250%;
+}
+
+
+.my_cards{
+    height: 100vh;
+    margin: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.big1{
+    grid-column: span 2;
+}
+
+.big{
+    grid-column: 2 / -1 ;
+}
+
+.ending{
+    grid-column: span 3;
+}
+
+img{
+    border-radius: 100px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    max-width: 100%;
+}
+
+img:hover{
+    box-shadow: rgba(233, 224, 224, 0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;;
+}
